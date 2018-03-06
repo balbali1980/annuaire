@@ -1,7 +1,7 @@
 
 
 /*
- * contrÃ´leur de l'annuaire.java
+ * contrôleur de l'annuaire.java
  * by Foued BALBALI
  * 
  */
@@ -47,7 +47,7 @@ public class controleurAnnuaire {
         frame.getTxtAdresse().setText("");
     }
 
-    // Afficher les donnÃ©es de la table
+    // Afficher les données de la table
 
     /**
      *
@@ -58,7 +58,7 @@ public class controleurAnnuaire {
         frame.getTabelData().setModel(tmb);
     }
 
-    //cette fonction pour afficher les donnÃ©es sÃ©lectionnÃ©es Ã  partir de la grille
+    //cette fonction pour afficher les données sélectionnées à  partir de la grille
 
     /**
      *
@@ -71,7 +71,7 @@ public class controleurAnnuaire {
         frame.getTxtAdresse().setText(lb.get(row).getAdresse());
     }
 
-    //Fonction permettant insÃ©rer des donnÃ©es en fonction de l'entrÃ©e utilisateur du champ de texte dans le cadre
+    //Fonction permettant insérer des données en fonction de l'entrée utilisateur du champ de texte dans le cadre
 
     /**
      *
@@ -84,7 +84,7 @@ public class controleurAnnuaire {
         implAnnuaire.ajouter(b);
     }
 
-    //mettre Ã  jour les donnÃ©es sur la base de l'entrÃ©e d'utilisateur de la textfield dans le cadre
+    //mettre à  jour les données sur la base de l'entrée d'utilisateur de la textfield dans le cadre
 
     /**
      *
@@ -98,11 +98,11 @@ public class controleurAnnuaire {
             b.setId(Integer.parseInt(frame.getTxtID().getText()));
             implAnnuaire.update(b);
         } catch (NumberFormatException numberFormatException) {
-            JOptionPane.showMessageDialog(frame, "SÃ©lectionnez les donnÃ©es Ã  mettre Ã  jour");
+            JOptionPane.showMessageDialog(frame, "Sélectionnez les données à  mettre à  jour");
         }
     }
 
-    //fonction pour supprimer les donnÃ©es sÃ©lectionnÃ©es
+    //fonction pour supprimer les données sélectionnées
 
     /**
      *
@@ -112,7 +112,7 @@ public class controleurAnnuaire {
             int id = Integer.parseInt(frame.getTxtID().getText());
             implAnnuaire.supprimer(id);
         } else {
-            JOptionPane.showMessageDialog(frame, "SÃ©lectionnez les donnÃ©es Ã  supprimer");
+            JOptionPane.showMessageDialog(frame, "Sélectionnez les données à supprimer");
         }
     }
 
@@ -133,7 +133,7 @@ public class controleurAnnuaire {
             implAnnuaire.getRechercheNom(frame.getTxtRechercheNom().getText());
             isiTableRechercheNom();
         } else {
-            JOptionPane.showMessageDialog(frame, "SÃ©lectionner des donnÃ©es");
+            JOptionPane.showMessageDialog(frame, "Sélectionner des données");
         }
     }
 }

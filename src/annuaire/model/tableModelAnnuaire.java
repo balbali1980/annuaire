@@ -35,7 +35,7 @@ public class tableModelAnnuaire extends AbstractTableModel {
             case 0:
                 return "ID";
             case 1:
-                return "Numéro de téléphone";
+                return "Num�ro de téléphone";
             case 2:
                 return "Nom";
             case 3:
