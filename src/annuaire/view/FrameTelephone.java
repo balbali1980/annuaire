@@ -60,7 +60,7 @@ public class FrameTelephone extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel1.setText("NÂ°. TÃ©l");
+        jLabel1.setText("N°. Tél");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setText("Nom");
@@ -131,7 +131,7 @@ public class FrameTelephone extends javax.swing.JFrame {
         });
 
         jLabel5.setForeground(new java.awt.Color(204, 0, 0));
-        jLabel5.setText("*NumÃ©ro automatique");
+        jLabel5.setText("*Numéro automatique");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel6.setText("Recherche par nom:");
@@ -166,9 +166,6 @@ public class FrameTelephone extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtNom, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(txtAdresse)
-                                .addGap(79, 79, 79))
                             .addComponent(txtNum, javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -178,7 +175,8 @@ public class FrameTelephone extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addComponent(txtRechercheNom, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(buttonRechercheNom, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE))))
+                                .addComponent(buttonRechercheNom, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE))
+                            .addComponent(txtAdresse, javax.swing.GroupLayout.Alignment.LEADING)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6)
@@ -234,7 +232,7 @@ public class FrameTelephone extends javax.swing.JFrame {
                     .addComponent(txtRechercheNom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonRechercheNom))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -250,7 +248,7 @@ public class FrameTelephone extends javax.swing.JFrame {
         cbt.reset();
     }//GEN-LAST:event_buttonAjouterActionPerformed
 
-    //action effectuÃ©e ou la gestion des Ã©vÃ©nements du bouton pour effacer les champs
+    //action effectuÃ©e ou la gestion des événements du bouton pour effacer les champs
     private void buttonEffacerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonEffacerActionPerformed
         cbt.reset();
     }//GEN-LAST:event_buttonEffacerActionPerformed
@@ -322,10 +320,7 @@ public class FrameTelephone extends javax.swing.JFrame {
         return txtID;
     }
 
-    /**
-     *
-     * @return
-     */
+ 
     public JTextField getTxtNum(){
         return txtNum;
     }
